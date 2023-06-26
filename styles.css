@@ -1,0 +1,52 @@
+@keyframes fillAnimation {
+  0% {
+    transform: scale(1);
+    background-color: transparent;
+  }
+  50% {
+    transform: scale(1.2);
+    background-color: gold;
+  }
+  100% {
+    transform: scale(1);
+    background-color: green;
+  }
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: url('https://wallpaperaccess.com/full/6159935.png') no-repeat center center fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+ color: white;
+  margin-left: 30px;
+}
+
+label, input {
+  margin-bottom: 15px;
+}
+
+#workExperienceInput {
+  margin-top: 15px;
+  width: 300px;
+  height: 50px;
+}
+
+button {
+  margin-top: 15px;
+  transition: color 0.3s ease;
+}
+
+button.filled {
+  animation: fillAnimation 2s linear;
+  background-color: green;
+  color: white;
+}
+
+#animation {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
